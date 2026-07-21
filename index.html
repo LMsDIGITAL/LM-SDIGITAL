@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LM-S Digital - Futuro da Tecnologia</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons (opcional) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- Seu CSS personalizado (sobrescreve o Bootstrap) -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Fundo com partículas -->
+  <div id="particles"></div>
+
+  <!-- ===== NAVBAR BOOTSTRAP ===== -->
+  <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand logo" href="#">LM-S <span>Digital</span></a>
+
+      <!-- Botão hambúrguer (Bootstrap) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+              aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu colapsável -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li> <!-- Novo link -->
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+
+          <!-- Dropdown "Soluções" -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Protótipos
+            </a>
+            <ul class="dropdown-menu custom-dropdown" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="pages/institucional/index.html">Institucional</a></li>
+              <li><a class="dropdown-item" href="pages/portfolio/index.html">Portfólio</a></li>
+              <li><a class="dropdown-item" href="pages/ecommerce/index.html">E‑commerce</a></li>
+              <li><a class="dropdown-item" href="pages/blog/index.html">Blog</a></li>
+              <li><a class="dropdown-item" href="pages/landing/index.html">Landing Page</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container text-center">
+      <h1 class="glitch" data-text="Construímos o amanhã">Construímos o amanhã</h1>
+      <p class="subtitle">Tecnologia de ponta com design que impacta</p>
+      <a href="#servicos" class="btn-neon">Explore agora</a>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <h2>Sobre a LM-S Digital</h2>
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <p>Somos uma empresa focada em soluções digitais inovadoras. Combinamos inteligência artificial, design imersivo e estratégias de marketing para levar sua marca ao próximo nível.</p>
+          <p>Nossos projetos são desenvolvidos com arquitetura modular, garantindo performance e escalabilidade.</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="stats d-flex justify-content-around text-center">
+            <div><span>✨</span> Excelência</div>
+            <div><span>🚀</span> Inovação</div>
+            <div><span>🏆</span> Resultados</div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFÓLIO ===== -->
+<section id="portfolio" class="portfolio">
+  <div class="container">
+    <h2>Nossos <span>Projetos</span></h2>
+    <p class="section-sub">Conheça alguns dos trabalhos que já realizamos.</p>
+    <div class="row g-4 justify-content-center">
+      <!-- Card do Projeto 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="portfolio-card">
+          <div class="portfolio-icon">
+           <img src="https://i.ibb.co/Fb27dh6x/img-redonda.png" alt="img-redonda" height="70">
+          </div>
+          <h3>Homepage oficial do Floas</h3>
+          <p>um jogo de Voice Chat no Roblox com ilhas voadoras, exploração, interação social e aventuras em um mundo único.</p>
+          <div class="portfolio-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+          <a href="https://floasvoice-hue.github.io/floas-voice/" target="_blank" class="btn-portfolio">Ver projeto <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+      <!-- Adicione mais cards aqui (copie o bloco acima) -->
+    </div>
+  </div>
+</section>
+
+  <!-- ===== SERVIÇOS ===== -->
+  <section id="servicos" class="servicos">
+    <div class="container">
+      <h2>Nossos Serviços</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <h3>Web Design</h3>
+            <p>Experiências visuais futuristas e responsivas.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <h3>Desenvolvimento</h3>
+            <p>Sistemas robustos com as melhores práticas.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <h3>Consultoria</h3>
+            <p>Estratégia digital para alavancar seu negócio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section id="contato" class="contato text-center">
+    <div class="container">
+      <h2>Vamos conversar?</h2>
+    <p class="mb-4">Fale conosco pelo WhatsApp ou acompanhe nosso conteúdo no Instagram.</p>
+    <div class="contato-actions">
+      <a href="https://wa.me/5511913578331?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços." target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="https://www.instagram.com/lms_digitall?igsh=MWMyeW9ubXh2empocg%3D%3D" target="_blank" class="btn-instagram">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="text-center py-4">
+    <div class="container">
+      <p class="mb-0">© 2026 LM-S Digital – Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (necessário para o menu colapsável e dropdown) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Seu JavaScript personalizado -->
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | NexusCorp</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="../../index.html" class="logo">LM-S <span>FOLIO</span></a>
+      <ul class="nav-links">
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div class="hamburger"><i class="fas fa-bars"></i></div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div id="particles-js"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="badge">✨ Portfólio 2026</span>
+        <h1 class="glitch" data-text="Criamos o impossível">Criamos o <span>impossível</span></h1>
+        <p class="hero-desc">Design, tecnologia e inovação se encontram em cada projeto. Veja nosso trabalho.</p>
+        <div class="hero-buttons">
+          <a href="#projetos" class="btn-primary">Explorar projetos <i class="fas fa-arrow-down"></i></a>
+          <a href="#contato" class="btn-outline">Fale conosco</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="floating-card card1"><i class="fas fa-cube"></i> 3D Design</div>
+        <div class="floating-card card2"><i class="fas fa-code"></i> Dev</div>
+        <div class="floating-card card3"><i class="fas fa-palette"></i> UX/UI</div>
+        <div class="orb"></div>
+      </div>
+    </div>
+    <div class="scroll-indicator"><span>↓</span></div>
+  </section>
+
+  <!-- FILTROS + PROJETOS -->
+  <section id="projetos" class="projetos">
+    <div class="container">
+      <h2 class="section-title">Nossos <span>projetos</span></h2>
+      <p class="section-sub">Seleção de trabalhos que mostram nossa paixão por criar experiências únicas.</p>
+
+      <!-- Filtros -->
+      <div class="filtros">
+        <button class="filtro-btn active" data-filter="todos">Todos</button>
+        <button class="filtro-btn" data-filter="web">Web</button>
+        <button class="filtro-btn" data-filter="mobile">Mobile</button>
+        <button class="filtro-btn" data-filter="ux">UX/UI</button>
+        <button class="filtro-btn" data-filter="3d">3D</button>
+      </div>
+
+      <!-- Grid de Projetos -->
+      <div class="projetos-grid" id="projetosGrid">
+        <!-- Projeto 1 -->
+        <div class="projeto-item" data-categoria="web">
+          <div class="projeto-card">
+            <div class="projeto-img" style="background: linear-gradient(135deg, #6c5ce7, #a29bfe);">
+              <div class="projeto-overlay">
+                <span class="projeto-categoria">Web</span>
+                <h3>E‑commerce LM-S</h3>
+                <p>Plataforma de vendas com IA integrada.</p>
+                <button class="btn-detalhes" data-projeto="0">Ver detalhes <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="projeto-item" data-categoria="mobile">
+          <div class="projeto-card">
+            <div class="projeto-img" style="background: linear-gradient(135deg, #fd79a8, #e17055);">
+              <div class="projeto-overlay">
+                <span class="projeto-categoria">Mobile</span>
+                <h3>App FitLife</h3>
+                <p>Treinos personalizados com gamificação.</p>
+                <button class="btn-detalhes" data-projeto="1">Ver detalhes <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 3 -->
+        <div class="projeto-item" data-categoria="ux">
+          <div class="projeto-card">
+            <div class="projeto-img" style="background: linear-gradient(135deg, #00cec9, #00b894);">
+              <div class="projeto-overlay">
+                <span class="projeto-categoria">UX/UI</span>
+                <h3>Dashboard Analytics</h3>
+                <p>Interface intuitiva para dados complexos.</p>
+                <button class="btn-detalhes" data-projeto="2">Ver detalhes <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 4 -->
+        <div class="projeto-item" data-categoria="3d">
+          <div class="projeto-card">
+            <div class="projeto-img" style="background: linear-gradient(135deg, #fdcb6e, #f39c12);">
+              <div class="projeto-overlay">
+                <span class="projeto-categoria">3D</span>
+                <h3>Arquitetura Virtual</h3>
+                <p>Tour 3D interativo de imóveis.</p>
+                <button class="btn-detalhes" data-projeto="3">Ver detalhes <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 5 -->
+        <div class="projeto-item" data-categoria="web">
+          <div class="projeto-card">
+            <div class="projeto-img" style="background: linear-gradient(135deg, #6c5ce7, #fd79a8);">
+              <div class="projeto-overlay">
+                <span class="projeto-categoria">Web</span>
+                <h3>Blog TechMind</h3>
+                <p>Plataforma de conteúdo com foco em IA.</p>
+                <button class="btn-detalhes" data-projeto="4">Ver detalhes <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 6 -->
+        <div class="projeto-item" data-categoria="mobile">
+          <div class="projeto-card">
+            <div class="projeto-img" style="background: linear-gradient(135deg, #00b894, #00cec9);">
+              <div class="projeto-overlay">
+                <span class="projeto-categoria">Mobile</span>
+                <h3>EcoTrack</h3>
+                <p>Monitoramento sustentável com IoT.</p>
+                <button class="btn-detalhes" data-projeto="5">Ver detalhes <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Nossas <span>competências</span></h2>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-circle" data-percent="95">
+            <svg viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="40" />
+              <circle cx="50" cy="50" r="40" class="progress" />
+            </svg>
+            <span class="skill-value">95%</span>
+          </div>
+          <h4>UI/UX Design</h4>
+        </div>
+        <div class="skill-item">
+          <div class="skill-circle" data-percent="90">
+            <svg viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="40" />
+              <circle cx="50" cy="50" r="40" class="progress" />
+            </svg>
+            <span class="skill-value">90%</span>
+          </div>
+          <h4>Desenvolvimento Web</h4>
+        </div>
+        <div class="skill-item">
+          <div class="skill-circle" data-percent="85">
+            <svg viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="40" />
+              <circle cx="50" cy="50" r="40" class="progress" />
+            </svg>
+            <span class="skill-value">85%</span>
+          </div>
+          <h4>Mobile Apps</h4>
+        </div>
+        <div class="skill-item">
+          <div class="skill-circle" data-percent="80">
+            <svg viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="40" />
+              <circle cx="50" cy="50" r="40" class="progress" />
+            </svg>
+            <span class="skill-value">80%</span>
+          </div>
+          <h4>3D & Animação</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="contato">
+    <div class="container">
+      <div class="contato-wrapper">
+        <div class="contato-text">
+          <h2>Vamos <span>criar</span> algo incrível?</h2>
+          <p>Entre em contato e vamos transformar sua ideia em realidade.</p>
+          <div class="contato-info">
+            <div><i class="fas fa-envelope"></i> contato@nexuscorp.com</div>
+            <div><i class="fas fa-phone"></i> +55 (11) 99999-9999</div>
+            <div><i class="fas fa-map-marker-alt"></i> São Paulo, SP</div>
+          </div>
+        </div>
+        <form id="contatoForm" class="contato-form">
+          <input type="text" placeholder="Seu nome" id="nomeContato" required />
+          <input type="email" placeholder="Seu e-mail" id="emailContato" required />
+          <textarea placeholder="Sua mensagem" id="mensagem" rows="4" required></textarea>
+          <button type="submit" class="btn-primary">Enviar mensagem <i class="fas fa-paper-plane"></i></button>
+          <div class="form-message" id="formMessageContato"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div><strong>LM-S FOLIO</strong><br/><small>© 2026 – Criatividade sem limites.</small></div>
+        <div>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-dribbble"></i></a>
+          <a href="#"><i class="fab fa-behance"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+      <div class="lightbox-body" id="lightboxBody">
+        <h2 id="lbTitulo">Título do Projeto</h2>
+        <p id="lbDesc">Descrição detalhada do projeto.</p>
+        <div class="lb-tech" id="lbTech">
+          <span>React</span>
+          <span>Node.js</span>
+          <span>MongoDB</span>
+        </div>
+        <a href="#" class="btn-primary" id="lbLink">Ver projeto <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

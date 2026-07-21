@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Institucional | LM-S Digital</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="../../index.html" class="logo">LM-S <span>Digital</span></a>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div class="hamburger"><i class="fas fa-bars"></i></div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div id="particles-js"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="badge">🏢 Institucional</span>
+        <h1>Construindo o <span>futuro</span> com <span>tecnologia</span></h1>
+        <p class="hero-desc">Soluções digitais sob medida para negócios que buscam eficiência e inovação.</p>
+        <div class="hero-buttons">
+          <a href="#sobre" class="btn-primary">Conheça <i class="fas fa-arrow-right"></i></a>
+          <a href="#contato" class="btn-outline">Contato</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="orb"></div>
+        <div class="floating-card card1"><i class="fas fa-code"></i> Dev</div>
+        <div class="floating-card card2"><i class="fas fa-paint-brush"></i> Design</div>
+        <div class="floating-card card3"><i class="fas fa-database"></i> Dados</div>
+      </div>
+    </div>
+    <div class="scroll-indicator"><span>↓</span></div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-texto">
+          <h2 class="section-title">Sobre a <span>LM-S Digital</span></h2>
+          <p>A LM-S Digital atua no desenvolvimento de sistemas, design de interfaces e consultoria tecnológica. Nossa abordagem combina arquitetura modular, boas práticas de engenharia de software e foco em usabilidade.</p>
+          <p>Atendemos empresas de diversos portes, oferecendo soluções que vão desde aplicações web até integrações com inteligência artificial.</p>
+          <div class="sobre-diferenciais">
+            <div><i class="fas fa-check-circle"></i> Arquitetura escalável</div>
+            <div><i class="fas fa-check-circle"></i> Design centrado no usuário</div>
+            <div><i class="fas fa-check-circle"></i> Entregas ágeis</div>
+          </div>
+        </div>
+        <div class="sobre-imagem">
+          <div class="img-placeholder">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS (genérico) -->
+  <section id="servicos" class="servicos">
+    <div class="container">
+      <h2 class="section-title">Áreas de <span>atuação</span></h2>
+      <div class="servicos-grid">
+        <div class="servico-item">
+          <h3><i class="fas fa-globe"></i> Desenvolvimento de Homepages</h3>
+        </div>
+        <div class="servico-item">
+          <h3><i class="fas fa-tags"></i> Desenvolvimento de Ecommerces</h3>
+        </div>
+        <div class="servico-item">
+          <h3><i class="fas fa-pencil-alt"></i> Desenvolvimento de Blogs</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="contato">
+    <div class="container">
+      <div class="contato-wrapper">
+        <div class="contato-text">
+          <h2>Entre em <span>contato</span></h2>
+          <p>Para orçamentos, dúvidas ou parcerias, utilize o formulário ou os canais abaixo.</p>
+          <div class="contato-info">
+            <div><i class="fas fa-envelope"></i> contato@lmsdigital.com</div>
+            <div><i class="fas fa-phone"></i> +55 (11) 99999-9999</div>
+            <div><i class="fas fa-map-marker-alt"></i> Av. Paulista, 1000 – São Paulo, SP</div>
+          </div>
+        </div>
+        <form id="contatoForm" class="contato-form">
+          <input type="text" placeholder="Seu nome" id="nomeContato" required />
+          <input type="email" placeholder="Seu e-mail" id="emailContato" required />
+          <input type="text" placeholder="Assunto" id="assuntoContato" required />
+          <textarea placeholder="Sua mensagem" id="mensagemContato" rows="4" required></textarea>
+          <button type="submit" class="btn-primary">Enviar <i class="fas fa-paper-plane"></i></button>
+          <div class="form-message" id="formMessageContato"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div><strong>LM-S Digital</strong><br/><small>© 2026 – Tecnologia com propósito.</small></div>
+        <div>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
