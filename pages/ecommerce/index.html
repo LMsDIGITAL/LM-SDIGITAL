@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexusShop | E‑commerce</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="../../index.html" class="logo">LM-S<span> SHOP</span></a>
+      <div class="nav-actions">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Buscar produtos..." />
+          <button id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
+        <button class="cart-btn" id="cartToggle">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <div class="hamburger"><i class="fas fa-bars"></i></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO / BANNER -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="badge">🔥 Ofertas exclusivas</span>
+        <h1>Tech <span>em alta</span></h1>
+        <p>Os melhores gadgets com preços que cabem no seu bolso. Garanta já!</p>
+        <a href="#produtos" class="btn-primary">Ver produtos <i class="fas fa-arrow-down"></i></a>
+      </div>
+      <div class="hero-visual">
+        <div class="orb"></div>
+        <div class="floating-card card1"><i class="fas fa-tag"></i> Até 50% off</div>
+        <div class="floating-card card2"><i class="fas fa-shipping-fast"></i> Frete grátis</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUTOS -->
+  <section id="produtos" class="produtos">
+    <div class="container">
+      <h2 class="section-title">Produtos em <span>destaque</span></h2>
+      <div class="filtros">
+        <button class="filtro-btn active" data-categoria="todos">Todos</button>
+        <button class="filtro-btn" data-categoria="eletronicos">Eletrônicos</button>
+        <button class="filtro-btn" data-categoria="acessorios">Acessórios</button>
+        <button class="filtro-btn" data-categoria="smart">Smart</button>
+      </div>
+      <div class="produtos-grid" id="produtosGrid">
+        <!-- Os produtos serão inseridos via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CARRINHO LATERAL -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h2><i class="fas fa-shopping-cart"></i> Carrinho</h2>
+      <button class="cart-close" id="cartClose"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p style="color:#8080a0; text-align:center; padding:40px 0;">Seu carrinho está vazio.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cartTotal">R$ 0,00</span>
+      </div>
+      <button class="btn-primary checkout-btn" id="checkoutBtn">Finalizar compra</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div><strong>LM-S SHOP</strong><br/><small>© 2026 – Tecnologia que conecta.</small></div>
+        <div>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

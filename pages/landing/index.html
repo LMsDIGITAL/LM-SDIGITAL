@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexusLand – O Futuro é Agora</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="../../index.html" class="logo">LM-S <span>LAND</span></a>
+      <ul class="nav-links">
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#cta" class="btn-nav">Começar</a></li>
+      </ul>
+      <div class="hamburger"><i class="fas fa-bars"></i></div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div id="particles-js"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="badge">🚀 Lançamento 2026</span>
+        <h1 class="glitch" data-text="Revolucione sua presença digital">Revolucione sua presença digital</h1>
+        <div class="typing-wrapper">
+          <span class="typing-text"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-desc">Crie experiências imersivas que convertem visitantes em clientes fiéis.</p>
+        <div class="hero-buttons">
+          <a href="#cta" class="btn-primary">Comece grátis <i class="fas fa-arrow-right"></i></a>
+          <a href="#recursos" class="btn-outline">Ver recursos</a>
+        </div>
+        <div class="hero-stats">
+          <div><span class="counter" data-target="15000">0</span>+<br/><small>Clientes ativos</small></div>
+          <div><span class="counter" data-target="98">0</span>%<br/><small>Satisfação</small></div>
+          <div><span class="counter" data-target="4.9">0</span><br/><small>Avaliação média</small></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="floating-card card1"><i class="fas fa-rocket"></i> Inovação</div>
+        <div class="floating-card card2"><i class="fas fa-chart-line"></i> Crescimento</div>
+        <div class="floating-card card3"><i class="fas fa-shield-alt"></i> Segurança</div>
+        <div class="orb"></div>
+      </div>
+    </div>
+    <div class="scroll-indicator"><span>↓</span></div>
+  </section>
+
+  <!-- RECURSOS -->
+  <section id="recursos" class="recursos">
+    <div class="container">
+      <h2 class="section-title">Recursos <span>poderosos</span></h2>
+      <p class="section-sub">Tudo o que você precisa para dominar o mercado digital.</p>
+      <div class="cards-grid">
+        <div class="card-glass" data-delay="0">
+          <div class="icon"><i class="fas fa-bolt"></i></div>
+          <h3>Alta Performance</h3>
+          <p>Carregamento ultrarrápido e otimização para SEO, garantindo as melhores posições.</p>
+        </div>
+        <div class="card-glass" data-delay="150">
+          <div class="icon"><i class="fas fa-paint-brush"></i></div>
+          <h3>Design Imersivo</h3>
+          <p>Animações fluidas, microinterações e uma experiência visual que prende a atenção.</p>
+        </div>
+        <div class="card-glass" data-delay="300">
+          <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>100% Responsivo</h3>
+          <p>Funciona perfeitamente em qualquer dispositivo, do smartphone ao 4K.</p>
+        </div>
+        <div class="card-glass" data-delay="450">
+          <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+          <h3>Integração Total</h3>
+          <p>Conecte com CRM, e-mail marketing, analytics e muito mais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS (Carrossel) -->
+  <section id="depoimentos" class="depoimentos">
+    <div class="container">
+      <h2 class="section-title">O que dizem <span>nossos clientes</span></h2>
+      <div class="carousel-container">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="depoimento">
+            <div class="stars">★★★★★</div>
+            <p>"A NexusLand transformou nosso negócio. Em 3 meses, as conversões aumentaram 200%."</p>
+            <div class="author"><img src="https://i.pravatar.cc/60?img=1" alt=""/> <span>Ana Silva – CEO, TechInova</span></div>
+          </div>
+          <div class="depoimento">
+            <div class="stars">★★★★★</div>
+            <p>"Design impecável e suporte incrível. Recomendo de olhos fechados."</p>
+            <div class="author"><img src="https://i.pravatar.cc/60?img=2" alt=""/> <span>Carlos Mendes – Diretor, Agência M</span></div>
+          </div>
+          <div class="depoimento">
+            <div class="stars">★★★★★</div>
+            <p>"Nunca vi uma landing page tão rápida e bonita ao mesmo tempo. Impressionante!"</p>
+            <div class="author"><img src="https://i.pravatar.cc/60?img=3" alt=""/> <span>Juliana Rocha – Empreendedora</span></div>
+          </div>
+          <div class="depoimento">
+            <div class="stars">★★★★★</div>
+            <p>"A equipe entendeu exatamente nossa visão. Resultado superou todas as expectativas."</p>
+            <div class="author"><img src="https://i.pravatar.cc/60?img=4" alt=""/> <span>Rafael Lima – CTO, StartUpX</span></div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+          <button id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA + Formulário -->
+  <section id="cta" class="cta-section">
+    <div class="container">
+      <div class="cta-wrapper">
+        <div class="cta-text">
+          <h2>Pronto para <span>decolar?</span></h2>
+          <p>Junte-se a milhares de empresas que já estão usando a NexusLand para crescer.</p>
+        </div>
+        <form id="ctaForm" class="cta-form">
+          <input type="text" placeholder="Seu nome" id="nome" required />
+          <input type="email" placeholder="Seu e-mail" id="email" required />
+          <button type="submit" class="btn-primary">Quero começar <i class="fas fa-paper-plane"></i></button>
+          <div class="form-message" id="formMessage"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div><strong>LM-S LAND</strong><br/><small>© 2026 – Todos os direitos reservados.</small></div>
+        <div>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

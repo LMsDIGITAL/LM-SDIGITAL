@@ -1,0 +1,481 @@
+/* ========== RESET E BASE ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0a0a0a; /* Preto absoluto */
+  color: #d4c9a8; /* Dourado claro para texto */
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ========== PARTÍCULAS (douradas) ========== */
+#particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at 20% 30%, #1a140e, #0a0a0a 80%);
+  overflow: hidden;
+}
+
+#particles::before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.04) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: drift 60s linear infinite;
+}
+
+@keyframes drift {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  100% { transform: translate(-20%, -20%) rotate(10deg); }
+}
+
+#particles::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(255, 215, 0, 0.10) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(255, 215, 0, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 40% 90%, rgba(255, 215, 0, 0.05) 0%, transparent 50%);
+  animation: pulseGlow 8s ease-in-out infinite alternate;
+}
+
+@keyframes pulseGlow {
+  0% { opacity: 0.4; }
+  100% { opacity: 0.9; }
+}
+
+/* ========== NAVBAR BOOTSTRAP - DOURADA ========== */
+.custom-navbar {
+  background: rgba(10, 10, 10, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 215, 0, 0.25);
+  padding: 15px 0;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+}
+
+.custom-navbar .navbar-brand.logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #ffd700;
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.custom-navbar .navbar-brand.logo span {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.custom-navbar .nav-link {
+  color: #d4c9a8 !important;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  transition: 0.3s;
+  padding: 8px 16px !important;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ffd700 !important;
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+}
+
+/* Botão hambúrguer dourado */
+.custom-navbar .navbar-toggler {
+  border: 1px solid rgba(255, 215, 0, 0.4);
+  padding: 8px 12px;
+}
+
+.custom-navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 215, 0, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Dropdown dourado */
+.custom-navbar .dropdown-menu.custom-dropdown {
+  background: rgba(15, 12, 8, 0.98);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 8px;
+  padding: 10px 0;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+}
+
+.custom-navbar .dropdown-item {
+  color: #d4c9a8;
+  padding: 10px 20px;
+  transition: 0.2s;
+}
+
+.custom-navbar .dropdown-item:hover {
+  background: rgba(255, 215, 0, 0.08);
+  color: #ffd700;
+}
+
+/* ========== HERO - DOURADO ========== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+  background: radial-gradient(circle at center, rgba(255, 215, 0, 0.03), transparent 70%);
+}
+
+.hero h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 0 0 40px rgba(255, 215, 0, 0.15), 0 0 80px rgba(255, 215, 0, 0.05);
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.glitch {
+  animation: glitchGold 3s infinite;
+}
+
+@keyframes glitchGold {
+  0%, 100% { transform: skew(0); opacity: 1; text-shadow: 0 0 20px rgba(255, 215, 0, 0.2); }
+  5% { transform: skew(-2deg); opacity: 0.8; text-shadow: 3px 0 #ffd700, -3px 0 #ff8c00; }
+  10% { transform: skew(2deg); opacity: 1; text-shadow: -3px 0 #ffd700, 3px 0 #ff8c00; }
+  15% { transform: skew(0); opacity: 1; text-shadow: 0 0 20px rgba(255, 215, 0, 0.2); }
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  color: #b8ae8a;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.05);
+}
+
+.btn-neon {
+  display: inline-block;
+  padding: 15px 40px;
+  border: 2px solid #ffd700;
+  border-radius: 50px;
+  color: #ffd700;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: transparent;
+  transition: 0.4s;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+}
+
+.btn-neon:hover {
+  background: #ffd700;
+  color: #0a0a0a;
+  box-shadow: 0 0 40px rgba(255, 215, 0, 0.4), 0 0 80px rgba(255, 215, 0, 0.2);
+  transform: scale(1.05);
+  border-color: #ffd700;
+}
+
+/* ========== SEÇÕES ========== */
+section {
+  padding: 80px 0;
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  text-align: center;
+  background: linear-gradient(135deg, #ffd700, #ff8c00, #ffd700);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: goldShine 4s ease-in-out infinite alternate;
+}
+
+@keyframes goldShine {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* ========== CARDS DOURADOS ========== */
+.card {
+  background: rgba(20, 15, 10, 0.5) !important;
+  backdrop-filter: blur(4px);
+  padding: 30px 20px;
+  border-radius: 16px !important;
+  border: 1px solid rgba(255, 215, 0, 0.15) !important;
+  transition: 0.4s;
+  color: #d4c9a8;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: #ffd700 !important;
+  box-shadow: 0 10px 40px rgba(255, 215, 0, 0.15), 0 0 60px rgba(255, 215, 0, 0.05);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #ffd700;
+  text-shadow: 0 0 15px rgba(255, 215, 0, 0.1);
+}
+
+.card p {
+  color: #b8ae8a;
+}
+
+/* ========== STATS DOURADOS ========== */
+.stats div span {
+  display: block;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #ffd700;
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+}
+
+.stats div {
+  color: #b8ae8a;
+}
+
+/* ========== FOOTER DOURADO ========== */
+footer {
+  border-top: 1px solid rgba(255, 215, 0, 0.1);
+  color: #6b5f4a;
+  font-size: 0.9rem;
+}
+
+/* ========== RESPONSIVIDADE ========== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .stats {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .stats div span {
+    font-size: 2rem;
+  }
+}
+/* ========== PORTFÓLIO ========== */
+.portfolio {
+  padding: 80px 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.portfolio h2 span {
+  background: linear-gradient(135deg, #d4af37, #f1c40f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-sub {
+  text-align: center;
+  color: #b0b0c0;
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+}
+
+.portfolio-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.03) 0%, transparent 70%);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.portfolio-card:hover::before {
+  opacity: 1;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-15px) scale(1.02);
+  border-color: #d4af37;
+  box-shadow: 0 20px 60px rgba(212, 175, 55, 0.15);
+}
+
+.portfolio-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(212, 175, 55, 0.05));
+  border: 2px solid rgba(212, 175, 55, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #d4af37;
+  margin-bottom: 20px;
+  transition: 0.4s;
+}
+
+.portfolio-card:hover .portfolio-icon {
+  transform: scale(1.1) rotate(-5deg);
+  border-color: #d4af37;
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
+}
+
+.portfolio-card h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.portfolio-card p {
+  color: #b0b0c0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.portfolio-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.portfolio-tags span {
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  padding: 4px 14px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  color: #d4af37;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.btn-portfolio {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 4px;
+}
+
+.btn-portfolio:hover {
+  color: #f1c40f;
+  border-bottom-color: #d4af37;
+  gap: 12px;
+}
+
+.btn-portfolio i {
+  transition: 0.3s;
+}
+
+.btn-portfolio:hover i {
+  transform: translateX(4px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .portfolio-card {
+    padding: 30px 20px;
+  }
+  .portfolio-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+}
+.btn-portfolio {
+  pointer-events: auto !important; /* força a clicabilidade */
+  z-index: 10; /* garante que fique acima de outros elementos */
+  position: relative;
+}
+/* Botões de contato (WhatsApp e Instagram) */
+.contato-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-whatsapp,
+.btn-instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+  border: 2px solid transparent;
+  font-size: 1rem;
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: #fff;
+  border-color: #25D366;
+}
+
+.btn-whatsapp:hover {
+  background: #1da851;
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(37, 211, 102, 0.3);
+}
+
+.btn-instagram {
+  background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: #fff;
+  border-color: transparent;
+}
+
+.btn-instagram:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(225, 48, 108, 0.3);
+}

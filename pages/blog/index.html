@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | NexusCorp</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="../../index.html" class="logo">LM-S<span>BLOG</span></a>
+      <ul class="nav-links">
+        <li><a href="#posts">Posts</a></li>
+        <li><a href="#categorias">Categorias</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+      </ul>
+      <div class="hamburger"><i class="fas fa-bars"></i></div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+      <span class="badge">🔥 Blog Oficial</span>
+      <h1>Insights que <span>transformam</span></h1>
+      <p>Conteúdo de alta qualidade sobre tecnologia, design e inovação.</p>
+      <div class="hero-search">
+        <input type="text" id="searchInput" placeholder="Buscar posts..." />
+        <button id="searchBtn"><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+    <div class="scroll-indicator"><span>↓</span></div>
+  </section>
+
+  <!-- POSTS + SIDEBAR -->
+  <section id="posts" class="posts-section">
+    <div class="container">
+      <div class="blog-grid">
+        <!-- Main posts -->
+        <div class="posts-main" id="postsContainer">
+          <!-- Os posts serão inseridos via JS -->
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <div class="sidebar-widget">
+            <h3>Categorias</h3>
+            <ul id="categoriasList">
+              <li><a href="#" data-categoria="todos" class="active">Todos</a></li>
+              <li><a href="#" data-categoria="tecnologia">Tecnologia</a></li>
+              <li><a href="#" data-categoria="design">Design</a></li>
+              <li><a href="#" data-categoria="inovacao">Inovação</a></li>
+              <li><a href="#" data-categoria="marketing">Marketing</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Posts Recentes</h3>
+            <ul id="recentesList"></ul>
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Newsletter</h3>
+            <p>Receba os melhores conteúdos.</p>
+            <form id="newsletterForm">
+              <input type="email" placeholder="Seu e-mail" required />
+              <button type="submit">Inscrever</button>
+            </form>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Paginação -->
+      <div class="pagination" id="pagination">
+        <button id="prevPage"><i class="fas fa-chevron-left"></i></button>
+        <span id="pageInfo">Página 1</span>
+        <button id="nextPage"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <h2 class="section-title">Sobre o <span>LM-S Blog</span></h2>
+      <div class="sobre-content">
+        <p>Somos apaixonados por compartilhar conhecimento. Aqui você encontra artigos profundos sobre as tendências que estão moldando o futuro da tecnologia, design e negócios.</p>
+        <div class="sobre-stats">
+          <div><span>+250</span> Artigos</div>
+          <div><span>15k</span> Leitores</div>
+          <div><span>4.8</span> ⭐ Avaliação</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div><strong>LM-S Blog</strong><br/><small>© 2026 – Conhecimento sem fronteiras.</small></div>
+        <div>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX DE POST -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lbClose"><i class="fas fa-times"></i></button>
+      <div class="lightbox-body">
+        <h2 id="lbTitulo">Título do Post</h2>
+        <div class="lb-meta"><span id="lbCategoria">Categoria</span> • <span id="lbData">Data</span></div>
+        <p id="lbDesc">Conteúdo completo do post...</p>
+        <div class="lb-tags" id="lbTags"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
